@@ -25,8 +25,10 @@
          <input type="password" id = "passwordVerification" name="passwordVerification" placeholder="verify password">
        </div>
        <div class="">
-         <label for="profilePicture">profile picture</label>
-         <input type="file" name="image" placeholder="image">
+         <input type="radio" name="typeOfUser" value="student"> Student<br>
+         <input type="radio" name="typeOfUser" value="client"> Client<br>
+         <!-- <label for="profilePicture">profile picture</label> -->
+         <!-- <input type="file" name="image" placeholder="image"> -->
        </div>
        <div>
          <button type="button" name="button" onclick="registrationSubmission()">Register</button>

@@ -8,12 +8,12 @@ autoIncrement.initialize(connection);
 
 var registrationSchema = Schema({
 
-    uid: {type:Schema.Types.ObjectId, startAt: 0},
+    uid: {type:Schema.Types.ObjectId, startAt: 1},
     username:{type:String, required:true, unique:true},
     password:{type:String, required:true},
-    image:String
+    type:{type:String, required:true}
 },{
-versionKey: false,
+versionKey: false
 //_id:false
 });
 
