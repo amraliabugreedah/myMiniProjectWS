@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>GUC Portfolio Department</title>
+    <title>Registration</title>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
@@ -10,26 +10,47 @@
     <!-- <script src="./myJQueryScripts.js"></script> -->
   </head>
   <body>
-<div class="">
+    <br>
+<div class="container">
      <form class="" id="registrationForm" action="/registerUser" method="post">
-       <div class="">
+       <div class="row">
+           <div class="col-xs-1">
                <label for="usernameLabel">username</label>
+             </div>
+                 <div class="col-xs-11">
                <input type="text" name="usernameTextfield" placeholder="username">
+            </div>
        </div>
-       <div class="">
-         <label for="password" id = "passwordLabel">password</label>
-         <input type="password" id = "password" name="password" placeholder="password">
+       <br>
+       <div class="row">
+          <div class="col-xs-1">
+              <label for="password" id = "passwordLabel">password</label>
+            </div>
+          <div class="col-xs-11">
+                  <input type="password" id = "password" name="password" placeholder="password">
+          </div>
        </div>
-       <div class="">
-         <label for="passwordVerification" id = "passwordVerificationLabel">verify password</label>
-         <input type="password" id = "passwordVerification" name="passwordVerification" placeholder="verify password">
+       <br>
+       <div class="row">
+                 <div class="col-xs-1">
+                   <label for="passwordVerification" id = "passwordVerificationLabel">verify password</label>
+                 </div>
+                <div class="col-xs-11">
+                   <input type="password" id = "passwordVerification" name="passwordVerification" placeholder="verify password">
+                </div>
        </div>
-       <div class="">
-         <input type="radio" name="typeOfUser" value="student"> Student<br>
-         <input type="radio" name="typeOfUser" value="client"> Client<br>
+       <br>
+       <div class="row">
+                 <div class="col-xs-1">
+                   <input type="radio" name="typeOfUser" value="student" checked = "checked"> Student
+                 </div>
+                <div class="col-xs-11">
+                   <input type="radio" name="typeOfUser" value="client"> Client
+                 </div>
          <!-- <label for="profilePicture">profile picture</label> -->
          <!-- <input type="file" name="image" placeholder="image"> -->
        </div>
+       <br>
        <div>
          <button type="button" name="button" onclick="registrationSubmission()">Register</button>
 
