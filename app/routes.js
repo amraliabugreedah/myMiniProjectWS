@@ -45,6 +45,25 @@ router.get('/getUserProfile', studentpageController.getUserProfile);
 
 router.post('/addWork', studentProfileController.addWork);
 
+router.get('/viewWork', function(req, res){
+
+              var username = req.session.username;
+
+                workModel.find({'username':username},function(err, works){
+
+                    if(err){
+
+                        res.send(err.message);
+
+                    }else{
+
+                        res.render('studentWork', {works});
+
+                    }
+
+                });
+
+});
 
 // export router
 
